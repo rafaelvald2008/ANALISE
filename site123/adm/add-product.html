@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\Desktop\site02\assets\css\add-product.css">
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <h1>Adicionar Produto</h1>
+    <form action="/add-product" method="POST">
+        <label for="name">Nome do Produto:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="price">Preço:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="category">Categoria:</label>
+        <select id="category" name="category_id">
+            <option value="1">Mais Vendidos</option>
+            <option value="2">Ofertas</option>
+            <option value="3">Estética e Beleza</option>
+            <option value="4">Eletrônicos</option>
+            <option value="5">Acessórios para Celulares</option>
+            <option value="6">Casa e Cozinha</option>
+            <option value="7">Saúde e Bem-estar</option>
+        </select>
+
+        <button type="submit">Adicionar Produto</button>
+    </form>
+</body>
+</html>
