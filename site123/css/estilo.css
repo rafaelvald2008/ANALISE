@@ -192,9 +192,11 @@ body {
 }
 
 .banner img {
-  width: 100%;
+  width: 90%;
   height: 380px;
+  margin: 25px 50px 0px 65px;
   object-fit: cover;
+  border-radius: 25px;
 }
 /* Quando a largura da tela for pequena (menor ou igual a 768px), troque a imagem */
 @media only screen and (max-width: 768px) {
@@ -216,11 +218,29 @@ body {
 
 .category-item {
   text-align: center;
+  
 }
 
 .category-item img {
   width: 100px;
   border-radius: 80px;
+}
+
+h2 {
+  font-family: 'AttenticaUltraLight', sans-serif;
+  margin: 0px 0px 0px 15px;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: 'AttenticaUltraLight';
+  src: url('E:/Desktop/site123/fontes/DeAetna_V1.000/DeAetna-Text.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h4 {
+  font-family: 'AttenticaUltraLight', sans-serif;
 }
 
 .product-card {
