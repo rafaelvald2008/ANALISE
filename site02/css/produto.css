@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf9f6;
+  }
+  
+  .top-bar {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Esconde a parte que passa dos limites */
+    height: 58px; /* Ajuste a altura conforme necessário */
+    position: relative;
+  }
+  
+  .scrolling-image {
+    background-image: url("E:/Desktop/site123/img/topbar.png");
+    background-repeat: repeat-x;
+    height: 80px; /* Mesma altura da .top-bar */
+    width: 200%; /* Ajuste para que a imagem tenha espaço para "correr" */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: scroll 17s linear infinite; /* 10s para rolar, pode ajustar o tempo */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* From Uiverse.io by aadium */ 
+  .paste-button {
+    position: relative;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .button {
+    background-color: #ff6600;
+    color: #212121;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color: #212121;
+    border: 2px solid #ff6600;
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: #e64a00;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ff6600;
+    color: #212121;
+  }
+  
+  .dropdown-content a:focus {
+    background-color: #212121;
+    color: #000000;
+  }
+  
+  .dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+  }
+  
+  .dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+  }
+  
+  .paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .paste-button:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010101;
+    padding: 20px 50px;
+  }
+  
+  .navbar img {
+    width: 120px;
+  }
+  
+  .search-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #e64a00;
+  }
+  
+  .cart a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .cart img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #ff6600;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+  .menu-bar {
+    background-color: #010101;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #ff6600;
+  }
+
+/* Estilo geral */
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Container do Produto */
+.product-container {
+    display: flex;
+    flex-direction: row;
+    
+    margin: 30px 0;
+}
+
+.image-gallery {
+    
+}
+
+#main-image {
+    width: 300px;
+    height: auto;
+    border: 2px solid #f5a623;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f5a623;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); /* Ampliar a miniatura ao passar o mouse */
+}
+
+.product-details {
+    margin-left: 20px;
+    max-width: 400px;
+}
+
+/* Preço do produto */
+.price {
+    color: #f5a623;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* Botão de compra */
+.buy-btn {
+    background-color: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #e5941f;
+}
+
+/* Produtos relacionados */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    
+}
+
+footer h2 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.product-card {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: auto;
+    margin: 20px;
+    position: left;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-info h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    color: #008000;
+    margin: 5px 0;
+  }
+  
+  .product-discount {
+    color: #008000;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+/* Mobile */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        margin-left: 0;
+        text-align: center;
+    }
+}

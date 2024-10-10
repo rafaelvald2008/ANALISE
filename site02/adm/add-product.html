@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="add-product.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Painel Administrativo</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="E:\Desktop\site02\adm\manage-products.html">Gerenciar Produtos</a></li>
+            <li><a href="#">Vendas</a></li>
+            <li><a href="#">Relatórios</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h1>Dashboard de Vendas</h1>
+
+        <!-- Sales overview cards -->
+        <div class="card-container">
+            <div class="card">
+                <h3>Total de Vendas</h3>
+                <p id="total-sales">R$ 0</p>
+            </div>
+            <div class="card">
+                <h3>Produtos Vendidos</h3>
+                <p id="products-sold">0 unidades</p>
+            </div>
+            <div class="card">
+                <h3>Produtos em Estoque</h3>
+                <p id="total-stock">0 unidades</p>
+            </div>
+        </div>
+
+        <!-- Section for adding products -->
+        <h2>Adicionar Novo Produto</h2>
+        <form id="product-form" class="product-form">
+            <label for="product-name">Nome do Produto:</label>
+            <input type="text" id="product-name" placeholder="Digite o nome do produto" required>
+
+            <label for="product-price">Preço:</label>
+            <input type="number" id="product-price" placeholder="Digite o preço do produto" required>
+
+            <label for="product-stock">Descrição</label>
+            <input type="text" id="product-stock" placeholder="Quantidade em estoque" required>
+
+            <label for="product-category">Categoria:</label>
+            <select id="product-category" required>
+                <option value="Mais vendidos">Mais vendidos</option>
+                <option value="Ofertas">Ofertas</option>
+                <option value="Estética e Beleza">Estética e Beleza</option>
+                <option value="Eletrônicos">Eletrônicos</option>
+                <option value="Acessórios">Acessórios</option>
+                <option value="Acessórios para Celulares">Acessórios para Celulares</option>
+                <option value="Casa e Cozinha">Casa e Cozinha</option>
+                <option value="Saude e Bem-estar">Saude e Bem-estar</option>
+            </select>
+
+            <button type="submit">Adicionar Produto</button>
+        </form>
+
+        <!-- Recent sales table -->
+        <h2>Vendas Recentes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Data</th>
+                    <th>Quantidade Vendida</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody id="sales-table-body">
+                <!-- Sales rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="E:\Desktop\site02\js\adm.js"></script>
+</body>
+</html>

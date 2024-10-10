@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Áurea-login</title>
+  <link rel="stylesheet" href="E:\Desktop\site02\css\login-cadastro.css">
+</head>
+<body>
+  
+  <div class="form">
+    <ul class="tab-group">
+      <li class="tab active"><a href="#signup" style="border-radius: 15px!important;margin-right:8x;">Cadastrar-se</a></li>
+      <li class="tab"><a href="#login" style="border-radius: 15px!important;margin-left:8px;">Login</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="signup">
+        <h1>Registrar</h1>
+        <form action="/" method="post">
+          <div class="top-row">
+            <div class="field-wrap">
+              <input type="text" required placeholder="Primeiro Nome" />
+            </div>
+            <div class="field-wrap">
+              <input type="text" required placeholder="Segundo Nome" />
+            </div>
+          </div>
+          <div class="field-wrap">
+            <input type="email" required placeholder="Email"/>
+          </div>
+          <div class="field-wrap">
+            <input type="password" required placeholder="Senha" />
+          </div>
+          <button type="submit" class="button button-block">Cadastrar-se</button>
+        </form>
+      </div>
+      <div id="login">
+        <h1>Bem vindo de volta!</h1>
+        <form action="/" method="post">
+          <div class="field-wrap">
+            <input type="email" required placeholder="Email" />
+          </div>
+          <div class="field-wrap">
+            <input type="password" required placeholder="Senha" />
+          </div>
+          <p class="forgot"><a href="https://www.web-leb.com/code">Esqueceu sua Senha?</a></p>
+          <button class="button button-block" >Login</button>
+        </form>
+      </div>
+    </div>
+  </div> 
+  
+  <script src="formulario.js"></script>
+</body>
+</html>
